@@ -81,6 +81,8 @@ $ docker-compose build
 $ docker-compose up
 
 # The API REST server will initialize at <http://localhost:3000>
+```
+
 The MySQL instance will start with a database and user privileges set in the src/mysqldb-init/ folder. If the configuration is changed, the API container may not be able to communicate with the MySQL database.
 
 The API documentation can be accessed in the following format using OpenAPI:
