@@ -9,13 +9,13 @@
 <h1 align="center">API de Mediciones</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/tu_usuario/nodejs-mysql-docker?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/eleecash/nodejs-mysql-docker?color=56BEB8">
   
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/tu_usuario/nodejs-mysql-docker?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/eleecash/nodejs-mysql-docker?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tu_usuario/nodejs-mysql-docker?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/eleecash/nodejs-mysql-docker?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/tu_usuario/nodejs-mysql-docker?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/eleecash/nodejs-mysql-docker?color=56BEB8">
 </p>
 
 <p align="center">
@@ -85,116 +85,9 @@ $ docker-compose up
 
 The MySQL instance will start with a database and user privileges set in the src/mysqldb-init/ folder. If the configuration is changed, the API container may not be able to communicate with the MySQL database.
 
-The API documentation can be accessed in the following format using OpenAPI:
+The API documentation can be accessed in the following format using OpenAPI Swagger:
+<a href="https://api.ejemplo.com/v1" target="_blank">Click here to see the API mediciones</a>
 
-openapi: 3.0.3
-info:
-  title: API de Mediciones
-  description: API para consultar y enviar datos a la tabla de mediciones
-  version: 1.0.0
-servers:
-- url: https://api.ejemplo.com/v1
-paths:
-  /mediciones:
-    get:
-      summary: Obtiene todas las mediciones
-      operationId: obtener_mediciones
-      parameters:
-        - name: lugar
-          in: query
-          description: Filtra por el lugar donde se tomó la medida 
-          required: false
-          schema:
-            type: string
-        - name: tipo_gas
-          in: query
-          description: Filtra por el tipo de gas medido
-          required: false
-          schema:
-            type: string
-        - name: desde_hora
-          in: query
-          description: Filtra mediciones desde una hora específica
-          required: false
-          schema:
-            type: string
-            format: date-time
-        - name: hasta_hora
-          in: query
-          description: Filtra mediciones hasta una hora específica
-          required: false
-          schema:
-            type: string
-            format: date-time
-      responses:
-        "200":
-          description: Lista de mediciones obtenida correctamente
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Medicion'
-        "400":
-          description: Parámetros de consulta inválidos
-    post:
-      summary: Envía una nueva medición
-      operationId: enviar_medicion
-      requestBody:
-        description: Datos de la nueva medición
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Medicion'
-      responses:
-        "201":
-          description: Medición creada correctamente
-        "400":
-          description: Datos de medición inválidos
-  
-  /mediciones/ultima:
-    get:
-      summary: Obtiene la última medición registrada
-      operationId: obtener_ultima_medicion
-      responses:
-        "200":
-          description: Última medición obtenida correctamente
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Medicion'
-        "404":
-          description: No se encontró ninguna medición
-
-components:
-  schemas:
-    Medicion:
-      type: object
-      properties:
-        medida:
-          type: number
-          description: Valor de la medida tomada por el sensor
-        lugar:
-          type: string
-          description: Lugar donde se tomó la medida
-        tipo_gas:
-          type: string
-          description: Tipo de gas que mide el sensor
-        hora:
-          type: string
-          format: date-time
-          description: Hora en la que se tomó la medida
-      required:
-        - medida
-        - lugar
-        - tipo_gas
-        - hora
-      example:
-        medida: 50.5
-        lugar: "Zona Industrial"
-        tipo_gas: "CO2"
-        hora: "2024-09-26T14:30:00Z"
     
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
