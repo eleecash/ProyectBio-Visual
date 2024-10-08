@@ -1,8 +1,9 @@
-<div align="center" id="top"> <!-- <img src="./.github/app.gif" alt="Docker API Project" /> --> &#xa0; </div> <h1 align="center">API de Mediciones - Dockerized Application</h1> <p align="center"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/eleecash/api_mediciones?color=56BEB8"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eleecash/api_mediciones?color=56BEB8"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/eleecash/api_mediciones?color=56BEB8"> <img alt="License" src="https://img.shields.io/github/license/eleecash/api_mediciones?color=56BEB8"> </p> <p align="center"> <a href="#dart-about">Acerca del proyecto</a> &#xa0; | &#xa0; <a href="#rocket-technologies">Tecnologías</a> &#xa0; | &#xa0; <a href="#white_check_mark-requirements">Requisitos</a> &#xa0; | &#xa0; <a href="#checkered_flag-starting">Comenzando</a> &#xa0; | &#xa0; <a href="#computer-database-queries">Consultas a la Base de Datos</a> &#xa0; | &#xa0; <a href="#memo-license">Licencia</a> &#xa0; | &#xa0; <a href="https://github.com/eleecash" target="_blank">Autor</a> </p> <br>
-:dart: Acerca del proyecto
+<div align="center" id="top"> <!-- <img src="./.github/app.gif" alt="Docker API Project" /> --> &#xa0; </div> <h1 align="center">PROYECTO BIOMETRÍA Y MEDIAMBIENTE</h1> <p align="center"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/eleecash/api_mediciones?color=56BEB8"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eleecash/api_mediciones?color=56BEB8"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/eleecash/api_mediciones?color=56BEB8"> <img alt="License" src="https://img.shields.io/github/license/eleecash/api_mediciones?color=56BEB8"> </p> <p align="center"> <a href="#dart-about">Acerca del proyecto</a> &#xa0; | &#xa0; <a href="#rocket-technologies">Tecnologías</a> &#xa0; | &#xa0; <a href="#white_check_mark-requirements">Requisitos</a> &#xa0; | &#xa0; <a href="#checkered_flag-starting">Comenzando</a> &#xa0; | &#xa0; <a href="#computer-database-queries">Consultas a la Base de Datos</a> &#xa0; | &#xa0; <a href="#memo-license">Licencia</a> &#xa0; | &#xa0; <a href="https://github.com/eleecash" target="_blank">Autor</a> </p> <br>
+
+</div><h2>:dart: Acerca del proyecto</h2>
 Este proyecto define una API REST para obtener y almacenar mediciones de sensores de gases. Utiliza una arquitectura Docker con contenedores para la aplicación Node.js y una base de datos MySQL, permitiendo un entorno fácilmente replicable y escalable.
 
-:rocket: Tecnologías
+</div><h2>:rocket: Tecnologías</h2>
 Las siguientes herramientas fueron utilizadas en este proyecto:
 
 Docker
@@ -10,7 +11,7 @@ Node.js
 MySQL
 Express
 MySQL2 (Node Package)
-:white_check_mark: Requisitos
+</div><h2>:white_check_mark: Requisitos</h2>
 Antes de comenzar, asegúrate de tener Git, Node.js y Docker instalados en tu máquina.
 
 Asegúrate de definir las siguientes variables de entorno en un archivo .env en el directorio raíz del proyecto:
@@ -25,8 +26,7 @@ MYSQLDB_DOCKER_PORT=3306
 NODE_LOCAL_PORT=3000
 NODE_DOCKER_PORT=3000
 
-
-:checkered_flag: Comenzando
+</div><h2>:checkered_flag: Comenzando</h2>
 Pasos para clonar y levantar los contenedores Docker:
 Clonar el proyecto desde GitHub:
 
@@ -56,7 +56,8 @@ Estructura del Proyecto:
 - database-init.sql: Script SQL para inicializar la base de datos.
 - ejemplosdatos.sql: Datos de ejemplo para pruebas iniciales.
 
-:computer: Consultas a la Base de Datos
+</div><h2>:computer: Consultas a la Base de Datos</h2>
+
 · Obtener todas las mediciones:
 GET /mediciones
 
