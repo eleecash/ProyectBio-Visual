@@ -31,10 +31,10 @@ Pasos para clonar y levantar los contenedores Docker:
 Clonar el proyecto desde GitHub:
 
 1.Clonar el proyecto desde GitHub:
- https://github.com/eleecash/api_mediciones.git
+ https://github.com/eleecash/proyectbio.git
 
 2.Accede al directorio del proyecto:
-cd api_mediciones
+cd proyectbio
 
 3.Crea el archivo .env con las variables de entorno necesarias:
 touch .env
@@ -58,17 +58,17 @@ Estructura del Proyecto:
 
 </div><h2>:computer: Consultas a la Base de Datos</h2>
 
-· Obtener todas las mediciones:
+- Obtener todas las mediciones:
 GET /mediciones
 
 Parámetros opcionales:
 
-- lugar: Filtra por lugar.
-- tipo_gas: Filtra por tipo de gas.
-- desde_hora: Filtra desde una hora específica.
-- hasta_hora: Filtra hasta una hora específica.
+· lugar: Filtra por lugar.
+· tipo_gas: Filtra por tipo de gas.
+· desde_hora: Filtra desde una hora específica.
+· hasta_hora: Filtra hasta una hora específica.
 
-· Enviar una nueva medición 
+- Enviar una nueva medición 
 POST /mediciones
 
 Cuerpo de la solicitud (JSON):
@@ -80,15 +80,17 @@ Cuerpo de la solicitud (JSON):
   "hora": "2024-09-26T14:30:00"
 }
 
-· Obtener la última medición registrada:
+- Obtener la última medición registrada:
 GET /mediciones/ultima
 
-· Inicializar la base de datos manualmente:
+- Inicializar la base de datos manualmente:
 Si necesitas inicializar o reinicializar la base de datos, puedes usar los archivos SQL proporcionados en la carpeta src/mysql-init/:
 
 database-init.sql: Crea las tablas necesarias.
 ejemplosdatos.sql: Inserta datos de ejemplo en la tabla mediciones.
-:memo: License
+
+</div><h2>:memo: License</h2>
+
 Este proyecto está bajo la licencia MIT.
 
 Hecho con :heart: por Elena Ruiz De La Blanca
