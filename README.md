@@ -1,6 +1,8 @@
-<div align="center" id="top"> <!-- <img src="./.github/app.gif" alt="Docker API Project" /> --> &#xa0; </div> <h1 align="center">PROYECTO BIOMETRÍA Y MEDIAMBIENTE </h1> <h2 align="center">Contenedores Docker, base de datos y API </h2></div> 
+<div align="center" id="top"> <!-- <img src="./.github/app.gif" alt="Docker API Project" /> --> &#xa0; </div> <h1 align="center">PROYECTO BIOMETRÍA Y MEDIAMBIENTE </h1> <h2 align="center">Contenedores Docker, base de datos y API </h2>
+
 <a href="#dart-about">Acerca del proyecto</a> &#xa0; | &#xa0; <a href="#rocket-technologies">Tecnologías</a> &#xa0; | &#xa0; <a href="#white_check_mark-requirements">Requisitos</a> &#xa0; | &#xa0; <a href="#checkered_flag-starting">Comenzando</a> &#xa0; | &#xa0; <a href="#computer-database-queries">Consultas</a> &#xa0; | &#xa0; <a href="#memo-license">Licencia</a> &#xa0; | &#xa0; <a href="https://github.com/eleecash" target="_blank">Autor</a> </p> <br>
 
+</div> 
 </div><h2>:dart: Acerca del proyecto</h2>
 Este proyecto define una API REST para obtener y almacenar mediciones de sensores de gases. Utiliza una arquitectura Docker con contenedores para la aplicación Node.js y una base de datos MySQL, permitiendo un entorno fácilmente replicable y escalable.
 
