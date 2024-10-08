@@ -1,4 +1,4 @@
-<div align="center" id="top"> <!-- <img src="./.github/app.gif" alt="Docker API Project" /> --> &#xa0; </div> <h1 align="center">PROYECTO BIOMETRÍA Y MEDIAMBIENTE</h1> <p align="center"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/eleecash/api_mediciones?color=56BEB8"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eleecash/api_mediciones?color=56BEB8"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/eleecash/api_mediciones?color=56BEB8"> <img alt="License" src="https://img.shields.io/github/license/eleecash/api_mediciones?color=56BEB8"> </p> <p align="center"> <a href="#dart-about">Acerca del proyecto</a> &#xa0; | &#xa0; <a href="#rocket-technologies">Tecnologías</a> &#xa0; | &#xa0; <a href="#white_check_mark-requirements">Requisitos</a> &#xa0; | &#xa0; <a href="#checkered_flag-starting">Comenzando</a> &#xa0; | &#xa0; <a href="#computer-database-queries">Consultas a la Base de Datos</a> &#xa0; | &#xa0; <a href="#memo-license">Licencia</a> &#xa0; | &#xa0; <a href="https://github.com/eleecash" target="_blank">Autor</a> </p> <br>
+<div align="center" id="top"> <!-- <img src="./.github/app.gif" alt="Docker API Project" /> --> &#xa0; </div> <h1 align="center">PROYECTO BIOMETRÍA Y MEDIAMBIENTE </h1> <h2 align="center">Contenedores Docker, base de datos y API </h2> </div> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/eleecash/api_mediciones?color=56BEB8"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eleecash/api_mediciones?color=56BEB8"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/eleecash/api_mediciones?color=56BEB8"> <img alt="License" src="https://img.shields.io/github/license/eleecash/api_mediciones?color=56BEB8"> </p> <p align="center"> <a href="#dart-about">Acerca del proyecto</a> &#xa0; | &#xa0; <a href="#rocket-technologies">Tecnologías</a> &#xa0; | &#xa0; <a href="#white_check_mark-requirements">Requisitos</a> &#xa0; | &#xa0; <a href="#checkered_flag-starting">Comenzando</a> &#xa0; | &#xa0; <a href="#computer-database-queries">Consultas a la Base de Datos</a> &#xa0; | &#xa0; <a href="#memo-license">Licencia</a> &#xa0; | &#xa0; <a href="https://github.com/eleecash" target="_blank">Autor</a> </p> <br>
 
 </div><h2>:dart: Acerca del proyecto</h2>
 Este proyecto define una API REST para obtener y almacenar mediciones de sensores de gases. Utiliza una arquitectura Docker con contenedores para la aplicación Node.js y una base de datos MySQL, permitiendo un entorno fácilmente replicable y escalable.
@@ -6,11 +6,12 @@ Este proyecto define una API REST para obtener y almacenar mediciones de sensore
 </div><h2>:rocket: Tecnologías</h2>
 Las siguientes herramientas fueron utilizadas en este proyecto:
 
-Docker
-Node.js
-MySQL
-Express
-MySQL2 (Node Package)
+- Docker
+- Node.js
+- MySQL
+- Express
+- MySQL2 (Node Package)
+
 </div><h2>:white_check_mark: Requisitos</h2>
 Antes de comenzar, asegúrate de tener Git, Node.js y Docker instalados en tu máquina.
 
@@ -30,19 +31,19 @@ NODE_DOCKER_PORT=3000
 Pasos para clonar y levantar los contenedores Docker:
 Clonar el proyecto desde GitHub:
 
-1.Clonar el proyecto desde GitHub:
+1. Clonar el proyecto desde GitHub:
  https://github.com/eleecash/proyectbio.git
 
-2.Accede al directorio del proyecto:
+2. Accede al directorio del proyecto:
 cd proyectbio
 
-3.Crea el archivo .env con las variables de entorno necesarias:
+3. Crea el archivo .env con las variables de entorno necesarias:
 touch .env
 
-4.Construir y levantar los contenedores utilizando Docker Compose:
+4. Construir y levantar los contenedores utilizando Docker Compose:
 docker-compose up --build
 
-5.Accede a la aplicación:
+5. Accede a la aplicación:
 - La API estará disponible en http://localhost:3000.
 - La base de datos MySQL estará escuchando en el puerto 3306.
 
@@ -63,10 +64,10 @@ GET /mediciones
 
 Parámetros opcionales:
 
-· lugar: Filtra por lugar.
-· tipo_gas: Filtra por tipo de gas.
-· desde_hora: Filtra desde una hora específica.
-· hasta_hora: Filtra hasta una hora específica.
+- lugar: Filtra por lugar.
+- tipo_gas: Filtra por tipo de gas.
+- desde_hora: Filtra desde una hora específica.
+- hasta_hora: Filtra hasta una hora específica.
 
 - Enviar una nueva medición 
 POST /mediciones
