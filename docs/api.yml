@@ -78,6 +78,7 @@ paths:
         "404":
           description: No se encontró ninguna medición
 
+
 components:
   schemas:
     Medicion:
