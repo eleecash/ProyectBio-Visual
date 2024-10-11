@@ -1,11 +1,12 @@
 {
     "source": {
         "include": ["src"], 
+        "exclude": ["node_modules", "docs", "test"],
         "includePattern": ".+\\.js(doc|x)?$",  
         "excludePattern": "(node_modules|\\.git)"  
     },
     "opts": {
-        "destination": "./doc",  
+        "destination": "./docs/html/",  
         "recurse": true  
     },
     "plugins": [
