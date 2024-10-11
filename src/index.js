@@ -42,3 +42,6 @@ app.get('/', (req, res) => {
 app.listen(process.env.NODE_DOCKER_PORT, () => {
     console.log(`Servidor corriendo en el puerto ${process.env.NODE_DOCKER_PORT}`); // Muestra un mensaje cuando el servidor está activo
 });
+
+export default app;  // Asegúrate de que esta línea esté presente
+
